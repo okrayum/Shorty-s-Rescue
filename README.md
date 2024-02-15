@@ -6,7 +6,8 @@ Thank you for your interest in Shorty's Rescue. Let's make a change together!
 
 ## What We're Doing
 
-- **Why:** Shorty's Rescue wants to make it easier for dogs to find new homes by giving people a good way to meet with them.
+- **Why:** 
+  - Shorty's Rescue wants to make it easier for dogs to find new homes by giving people a good way to meet with them.
 - **What We Want:** 
   - Pair people who want a dog with dogs that need a home.
 - **Who We're Talking to:** 
@@ -26,6 +27,7 @@ Thank you for your interest in Shorty's Rescue. Let's make a change together!
 To start using Shorty's Rescue on your own computer, follow these steps:
 
 1. Clone the repository: To "clone" means to make another one of something. In this situation, "cloning" means to make another one of Shorty's Rescue on your own computer.
+   
    git clone https://github.com/okrayum/Shorty-s-Rescue.git
 
 2. Install dependencies for the client: "Install" sets up or adds something to your computer for use. "Dependencies" are more things that Shorty's Rescue needs to work as usual. In this case, "client" is where the frontend part of Shorty's Rescue is. The frontend of Shorty's Rescue will be the part you see and use with things like forms, and pictures.
