@@ -40,11 +40,11 @@ To start using Shorty's Rescue on your own computer, follow these steps:
    
    npm run start
 
-This will only let you see the *frontend* of  Shorty's Rescue at this time.
+This will only let you see the *frontend* of  Shorty's Rescue at this time. Forms will not work. You will not have use of the "Admin" side.
 
 ## Possible Problems
 
-There may be some things that don't work as expected. If you run into any problems, feel free to reach out for help.
+There may be some things that don't work as expected. If you run into any other problems, feel free to reach out for help.
 
 ## Contributions
 
