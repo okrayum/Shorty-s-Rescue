@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c10a19dc.css",
+    "main.js": "/static/js/main.12f88e2f.js",
+    "static/media/dogvideo.mp4": "/static/media/dogvideo.4e4f2b1fe34849ab0d56.mp4",
+    "static/media/flower.jpg": "/static/media/flower.e2bab46b4a20ca9bcb37.jpg",
+    "static/media/fencedIn.jpg": "/static/media/fencedIn.8910779caaa89584350e.jpg",
+    "static/media/blue_eyes.jpg": "/static/media/blue_eyes.dcb9469d09c637f41024.jpg",
+    "static/media/puppy.jpg": "/static/media/puppy.d4f9055fa1e6d264a04d.jpg",
+    "static/media/solo.jpg": "/static/media/solo.d5109ab2a52ca6f2de1b.jpg",
+    "static/media/happy.jpg": "/static/media/happy.f1c33de60d20d6b8a9b9.jpg",
+    "static/media/adopt_us.png": "/static/media/adopt_us.25df8999ea74db0b8c17.png",
+    "static/media/two_in_cage2.jpg": "/static/media/two_in_cage2.8723a5481f6e57738680.jpg",
+    "static/media/blockAdmin.jpg": "/static/media/blockAdmin.dda7868fe1a7854fbc9b.jpg",
+    "static/media/dark_resized2.png": "/static/media/dark_resized2.fc57219a9b09c3afff91.png",
+    "index.html": "/index.html",
+    "main.c10a19dc.css.map": "/static/css/main.c10a19dc.css.map",
+    "main.12f88e2f.js.map": "/static/js/main.12f88e2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c10a19dc.css",
+    "static/js/main.12f88e2f.js"
+  ]
+}
