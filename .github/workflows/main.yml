@@ -35,7 +35,7 @@ jobs:
         run: npm run build
         working-directory: client
 
-      # Deploy the app to GitHub Pages from the client/build folder
+      # Deploy the app to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
