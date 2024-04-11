@@ -18,27 +18,27 @@ jobs:
 
       # Set up Node.js environment
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '18.18.2'  # Specify your Node.js version
+          node-version: '18.x'  # Specify your desired Node.js version
 
-      # Install dependencies
+      # Navigate to the client folder
+      - name: Change working directory to client
+        run: cd client
+
+      # Install dependencies in the client folder
       - name: Install dependencies
         run: npm install
-        working-directory: client  # Specify the client folder as the working directory
-
+        working-directory: client
 
       # Build the React app
       - name: Build the app
         run: npm run build
-        working-directory: client  # Specify the client folder as the working directory
-
+        working-directory: client
 
       # Deploy the app to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Specify the branch to deploy to
-          folder: build  # Specify the folder containing the built app
-          working-directory: client  # Specify the client folder as the working directory
-  
+          folder: client/build  # Specify the folder containing the built app
