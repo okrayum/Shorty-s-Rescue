@@ -8,6 +8,9 @@ on:
   # Trigger the workflow on manual runs
   workflow_dispatch:
 
+permissions:
+  contents: write  # Needed for deployment to GitHub Pages
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,21 +25,17 @@ jobs:
         with:
           node-version: '18.x'  # Specify your desired Node.js version
 
-      # Navigate to the client folder
-      - name: Change working directory to client
-        run: cd client
-
       # Install dependencies in the client folder
       - name: Install dependencies
         run: npm install
         working-directory: client
 
-      # Build the React app
+      # Build the React app in the client folder
       - name: Build the app
         run: npm run build
         working-directory: client
 
-      # Deploy the app to GitHub Pages
+      # Deploy the app to GitHub Pages from the client/build folder
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
