@@ -25,10 +25,14 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm install
+        working-directory: client  # Specify the client folder as the working directory
+
 
       # Build the React app
       - name: Build the app
         run: npm run build
+        working-directory: client  # Specify the client folder as the working directory
+
 
       # Deploy the app to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -36,3 +40,5 @@ jobs:
         with:
           branch: gh-pages  # Specify the branch to deploy to
           folder: build  # Specify the folder containing the built app
+          working-directory: client  # Specify the client folder as the working directory
+  
