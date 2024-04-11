@@ -41,4 +41,3 @@ jobs:
         with:
           branch: gh-pages  # Specify the branch to deploy to
           folder: client/build  # Specify the folder containing the built app
-          working-directory: client  # Specify the client folder as the working directory       
