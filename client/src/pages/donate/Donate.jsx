@@ -13,8 +13,8 @@ const Donate = () => {
         <div className='donate-address-div'>
           <p>To mail or drop off donations:<br />
             Shorty's Rescue<br />
-            5454 W Lewis Ave<br />
-            Phoenix, AZ 85035
+            5454 W Shorty Dr<br />
+            Arizona, AZ 88800
           </p>
         </div>
       </div>
