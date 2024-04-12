@@ -2,7 +2,7 @@
   "name": "shortys-dog-rescue",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://okrayum.github.io/Shorty-s-Rescue/",
+  "homepage": "https://okrayum.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
