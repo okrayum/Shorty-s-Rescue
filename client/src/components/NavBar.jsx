@@ -38,7 +38,7 @@ const NavBar = ({ isAdmin, setIsAdmin, showLogIn, showLogOut, setShowLogIn, setL
     setShowLogIn(true)
     setLogOut(false)
     setIsOpen(true)
-    localStorage.setItem('isAdmin', true);
+    localStorage.setItem('isAdmin', false);
     localStorage.setItem('showLogOut', true);
   }
 
