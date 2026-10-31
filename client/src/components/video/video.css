@@ -17,3 +17,15 @@
     border-radius: 3px;
     box-shadow: .25rem .25rem .4rem rgba(0, 0, 0, 0.7);
   }
+
+@media only screen and (max-width: 750px) {
+  .video-container {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  video {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}

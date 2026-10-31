@@ -17,5 +17,6 @@ body {
   /* width: 100vw; */
   /* height: 100vh; */
   background-color: var(--secondaryColor);
-  color: var(--textColor)
+  color: var(--textColor);
+  overflow-x: clip;
 }

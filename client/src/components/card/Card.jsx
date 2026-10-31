@@ -5,19 +5,25 @@ import petsData from './petsData.json'
 const Card = () => {
 
     const imageStyle = {
-        width: '350px',   // Set the width to 350 pixels
-        height: '350px',  // Set the height to 350 pixels
+        width: '100%',   // Fill the card face on any screen size
+        height: '100%',
+        objectFit: 'cover',
     };
 
     const navigate = useNavigate();
-    const handleButtonClick = () => {
+    const handleButtonClick = (e) => {
+        e.stopPropagation(); // Don't unflip the card when tapping the button
         navigate("/adopt");
+    }
+
+    const handleCardClick = (e) => {
+        e.currentTarget.classList.toggle('flipped'); // Tap-to-flip for touch devices
     }
 
     return (
         <div className='flip-card-container'>
             {petsData.map((pet, index) => (
-                <div key={index} className="flip-card">
+                <div key={index} className="flip-card" onClick={handleCardClick}>
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
                             <img src={require(`../../assets/${pet.image}`)} alt="Avatar" style={imageStyle} />
