@@ -14,18 +14,15 @@ Content-Type: application/json
   }
 }
 
-### Submit Donation Form Data
-POST http://localhost:4000/forms/donation
+### Submit Inquiry Form Data
+POST http://localhost:4000/forms/inquiry
 Content-Type: application/json
 
 {
   "formData": {
     "fullName": "Jane Doe",
     "email": "jane.doe@example.com",
-    "amount": 50,
-    "creditCardNumber": "1234567812345678",
-    "expirationDate": "12/2023",
-    "securityCode": "123",
-    "zipCode": "12345"
+    "dogName": "Flower",
+    "message": "Hello, I would love to meet Flower!"
   }
 }

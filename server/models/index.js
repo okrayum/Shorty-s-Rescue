@@ -1,7 +1,7 @@
 const Adopt = require("./adopt");
-const Donate = require("./donate");
+const Inquiry = require("./inquiry");
 
 module.exports = {
   Adopt,
-  Donate
+  Inquiry
 }

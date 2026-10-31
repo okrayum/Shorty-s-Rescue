@@ -49,8 +49,8 @@
     flex-basis: calc(33.333%-20px);
 }
 
-/* donationSection holds "donation data" title and donation cards */
-.donationSection {
+/* inquirySection holds "inquiry data" title and inquiry cards */
+.inquirySection {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
     margin-bottom: 5%;
 }
 
-.donationRow {
+.inquiryRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -69,7 +69,7 @@
     width: 100%;
 }
 
-.donationCard {
+.inquiryCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,12 +91,12 @@
         flex-basis: calc(50%-20px);
     }
 
-    .donationCard {
+    .inquiryCard {
         flex-basis: calc(50%-20px);
     }
 
     .adoptCard,
-    .donationCard {
+    .inquiryCard {
         width: 100%;
         max-width: 350px;
         height: auto;

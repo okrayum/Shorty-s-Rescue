@@ -61,7 +61,7 @@ const NavBar = ({ isAdmin, setIsAdmin, showLogIn, showLogOut, setShowLogIn, setL
             <Link to='/' className={isLinkActive('/') ? 'active' : ''}>HOME</Link>
             <Link to='/about' className={isLinkActive('/about') ? 'active' : ''}>ABOUT</Link>
             <Link to='/adopt' className={isLinkActive('/adopt') ? 'active' : ''}>ADOPT</Link>
-            <Link to='/donate' className={isLinkActive('/donate') ? 'active' : ''}>DONATE</Link>
+            <Link to='/contact' className={isLinkActive('/contact') ? 'active' : ''}>CONTACT</Link>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}><p className='menu-text'>Close</p>
               <FaTimes />
             </button>

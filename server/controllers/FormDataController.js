@@ -1,4 +1,4 @@
-const { Adopt, Donate } = require('../models');
+const { Adopt, Inquiry } = require('../models');
 
 // Controller functions for fetching form data 
 async function getAdoptData(req, res) {
@@ -12,12 +12,12 @@ async function getAdoptData(req, res) {
   }
 }
 
-async function getDonateData(req, res) {
+async function getInquiryData(req, res) {
   try {
-    const donateData = await Donate.find();
-    res.status(200).json(donateData);
+    const inquiryData = await Inquiry.find();
+    res.status(200).json(inquiryData);
   } catch (error) {
-    console.error('Error fetching Donation Form data:', error);
+    console.error('Error fetching Inquiry Form data:', error);
     console.error(error.stack);  // Log the stack trace
     res.status(500).json({ error: 'Internal server error', message: error.message });
 
@@ -46,30 +46,27 @@ async function submitAdoptData(req, res) {
   }
 }
 
-async function submitDonateData(req, res) {
+async function submitInquiryData(req, res) {
   try {
     const formData = req.body.formData;
-    const newDonateData = new Donate({
+    const newInquiryData = new Inquiry({
       fullName: formData.fullName,
       email: formData.email,
-      amount: formData.amount,
-      creditCardNumber: formData.creditCardNumber,
-      expirationDate: formData.expirationDate,
-      securityCode: formData.securityCode,
-      zipCode: formData.zipCode,
+      dogName: formData.dogName,
+      message: formData.message,
     });
 
-    await newDonateData.save();
-    res.status(201).json({ message: 'Donation form data submitted successfully' });
+    await newInquiryData.save();
+    res.status(201).json({ message: 'Inquiry form data submitted successfully' });
   } catch (error) {
-    console.error('Error submitting donation form data:', error);
+    console.error('Error submitting inquiry form data:', error);
     res.status(500).json({ error: 'Internal server error', message: error.message });
   }
 }
 
 module.exports = {
   getAdoptData,
-  getDonateData,
+  getInquiryData,
   submitAdoptData,
-  submitDonateData,
+  submitInquiryData,
 };

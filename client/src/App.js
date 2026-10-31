@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Adopt from "./pages/adopt/Adopt";
-import Donate from "./pages/donate/Donate";
+import Contact from "./pages/contact/Contact";
 import Admin from './pages/admin/Admin';
 
 
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/adopt" element={<Adopt />} />
-        <Route path="/donate" element={<Donate />} />
+        <Route path="/contact" element={<Contact />} />
         {isAdmin ? (
           <Route path="/admin" element={<Admin />} />
         ) : (
